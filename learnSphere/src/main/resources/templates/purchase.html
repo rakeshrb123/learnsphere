@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Buy courses</title>
+</head>
+<body>
+<h1> Buy Courses</h1>
+<table border=1>
+<tr>
+<th> Course Id</th>
+<th>Course Name</th>
+<th>Course Price</th>
+<th>Lessons</th>
+<th>purchase</th>
+</tr>
+
+<tr th:each="courseList:${courseList}">
+<td th:text="${courseList.courseId}"></td>
+<td th:text="${courseList.courseName}"></td>
+<td th:text="${courseList.coursePrice}"></td>
+<td th:text="${courseList.lessons}"></td>
+<td><a href="/buying"><button>Buy Course</button></a></td>
+
+</tr>
+</table>
+
+</body>
+</html>

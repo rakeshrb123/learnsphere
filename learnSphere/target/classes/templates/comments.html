@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>comments</title>
+</head>
+<body>
+<h1>Comment details</h1>
+<table border=1>
+<tr>
+<th> Comment Id</th>
+<th>Comments</th>
+
+</tr>
+
+<tr th:each="courseList:${comments}">
+<td th:text="${courseList.commentId}"></td>
+<td th:text="${courseList.comment}"></td>
+
+</tr>
+</table>
+
+</body>
+</html>
